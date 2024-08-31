@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer";
 // import Modal from "./components/Modal";
 import Modal from 'react-modal';
 import Button from "./components/Button/Button";
-import s from './components/Modal/index.module.css'
+// import s from './components/Modal/index.module.css'
 
 function App() {
     // const [visible, setVisible] = useState(false)
@@ -37,10 +37,10 @@ function App() {
     }
 
     const modalContent = (
-        <div>
-            <h2 className={s.modalHeader}>Заголовок</h2>
-            <p className={s.modalContent}>Text</p>
-            <button onClick={closeModal} className={'s.cancelButton'}>Close</button>
+        <div className={'modal'}>
+            <h2 className={'modalHeader'}>Заголовок</h2>
+            <p className={'modalContent'}>Text</p>
+            <button onClick={closeModal} className={'cancelButton'}>Close</button>
         </div>
     )
 
