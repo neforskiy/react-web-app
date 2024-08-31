@@ -37,9 +37,9 @@ function App() {
     }
 
     const modalContent = (
-        <div className={'modal'}>
-            <h2 className={'modalHeader'}>Заголовок</h2>
-            <p className={'modalContent'}>Text</p>
+        <div>
+            <h2>Заголовок</h2>
+            <p>Text</p>
             <button onClick={closeModal} className={'cancelButton'}>Close</button>
         </div>
     )
