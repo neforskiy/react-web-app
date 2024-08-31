@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
+}
+
+
+.doneBtn {
+  /*color: black;*/
+  /*background: green;*/
+  /*border-radius: 8px;*/
+  /*position: fixed;*/
+  margin-left: 16px;
+  padding: 10px 10px 10px 10px;
+  border: 0 solid;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #008000 0%, #006400 51%, #008000 100%);
+  cursor: pointer;
+}
+
+.doneBtn:hover {
+  background-position: right center;
+}
+
+.cancelButton {
+  /*color: black;*/
+  /*background: red;*/
+  /*border-radius: 8px;*/
+  /*position: fixed;*/
+  /*bottom: -10px;*/
+  margin-left: 16px;
+  padding: 10px 10px 10px 10px;
+  border: 0 solid;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #b22222 0%, #8b0000 51%, #b22222 100%);
+  cursor: pointer;
+}
+
+.cancelButton:hover {
+  background-position: right center;
+}
+

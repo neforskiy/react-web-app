@@ -1,0 +1,28 @@
+.footer {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    bottom: -10px;
+    /*display: flex;*/
+    /*align-items: center;*/
+    height: 101px;
+    /*display: block;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    float: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    word-spacing: 2px;
+    border: 10px ridge lightblue;
+    border-radius: 10px;
+    /*align-items: center;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+    /*text-align: center;*/
+    margin: 0 auto;
+    display: block;
+}
