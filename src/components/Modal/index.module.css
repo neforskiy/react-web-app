@@ -21,11 +21,13 @@
     padding: 16px;
     background: white;
     border-radius: 8px;
+    opacity: 0;
 }
 
 .modalHeader {
     display: flex;
     justify-content: space-between;
+    opacity: 0;
     /*font-weight: bold;*/
 }
 
@@ -34,12 +36,14 @@
     text-align: left;
     width: 100%;
     font-size: 20px;
+    opacity: 0;
 }
 
 .modalFooter {
     margin-top: 16px;
     display: flex;
     justify-content: flex-end;
+    opacity: 0;
     /*position: fixed;*/
     /*bottom: 400px;*/
     /*left: 850px;*/

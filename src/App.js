@@ -3,15 +3,16 @@ import {useEffect, useState} from "react";
 import {useTelegram} from "./hooks/useTelegram";
 import Header from "./components/Header/Header";
 import {Route, Routes} from 'react-router-dom'
-import ProductList from "./components/ProductList/ProductList";
+// import ProductList from "./components/ProductList/ProductList";
 import Form from "./components/Form/Form";
 import Footer from "./components/Footer/Footer";
 // import Modal from "./components/Modal";
 import Modal from 'react-modal';
 import Button from "./components/Button/Button";
+import s from './components/Modal/index.module.css'
 
 function App() {
-    const [visible, setVisible] = useState(false)
+    // const [visible, setVisible] = useState(false)
     const {onToggleButton, tg} = useTelegram();
     const [modalIsOpen, setModalIsOpen] = useState(false)
 
@@ -19,13 +20,13 @@ function App() {
         tg.ready();
     }, [])
 
-    function onCancel () {
-        setVisible(false)
-    }
-    function onDone () {
-        alert('TI TUPOY PEDIK!')
-        setVisible(false)
-    }
+    // function onCancel () {
+    //     setVisible(false)
+    // }
+    // function onDone () {
+    //     alert('TI TUPOY PEDIK!')
+    //     setVisible(false)
+    // }
 
     const openModal = () => {
         setModalIsOpen(true);
@@ -37,9 +38,9 @@ function App() {
 
     const modalContent = (
         <div>
-            <h2>Заголовок</h2>
-            <p>Text</p>
-            <button onClick={closeModal} className={'cancelButton'}>Close</button>
+            <h2 className={s.modalHeader}>Заголовок</h2>
+            <p className={s.modalContent}>Text</p>
+            <button onClick={closeModal} className={'s.cancelButton'}>Close</button>
         </div>
     )
 
