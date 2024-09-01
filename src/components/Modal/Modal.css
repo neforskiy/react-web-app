@@ -26,6 +26,10 @@
     width: 50vw;
     transform: scale(0.5);
     transition: 0.4s all;
+    font-size: 20px;
+    color: white;
+    -webkit-text-fill-color: #000000;
+    -webkit-text-stroke: 1px #000000;
 }
 
 .modal__content.active {
@@ -33,10 +37,12 @@
 }
 
 .xBtn {
-    top: -7px;
-    left: 560px;
     visibility: hidden;
     position: relative;
+    display: block;
+    left: 98%;
+    transform: none;
+
 }
 
 .xIcon {

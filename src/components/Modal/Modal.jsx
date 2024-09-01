@@ -7,7 +7,7 @@ const Modal = ({active, setActive, children}) => {
     return (
         <div className={active ? 'modal active' : 'modal'} onClick={() => setActive(false)}>
             <div className={active ? 'modal__content active' : 'modal__content'} onClick={e => e.stopPropagation()}>
-                <button className={'xBtn'}><FontAwesomeIcon icon={faXmark} className={'xIcon'}/></button>
+                <button className={'xBtn'} onClick={() => setActive(false)}><FontAwesomeIcon icon={faXmark} className={'xIcon'}/></button>
                 {children}
             </div>
         </div>
