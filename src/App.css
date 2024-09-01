@@ -56,8 +56,3 @@ body {
 .cancelButton:hover {
   background-position: right center;
 }
-
-.modal {
-  color: black;
-  opacity: 0;
-}
