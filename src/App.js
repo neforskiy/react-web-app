@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import {Route, Routes} from 'react-router-dom'
 import ProductList from "./components/ProductList/ProductList";
 import Form from "./components/Form/Form";
+import ForSoft from "./components/ForSoft/ForSoft";
 
 function App() {
     const {onToggleButton, tg} = useTelegram();
@@ -19,7 +20,7 @@ function App() {
             <Routes>
                 <Route index element={<ProductList />}/>
                 <Route path={'form'} element={<Form />}/>
-                <Route path={'test'} element={console.log('user-agent: ' + navigator.userAgent)}/>
+                <Route path={'test'} element={<ForSoft />}/>
             </Routes>
         </div>
     );
