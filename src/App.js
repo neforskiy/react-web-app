@@ -19,7 +19,7 @@ function App() {
             <Routes>
                 <Route index element={<ProductList />}/>
                 <Route path={'form'} element={<Form />}/>
-                <Route path={'test'} element={console.log('test')}/>
+                <Route path={'test'} element={console.log('user-agent: ' + navigator.userAgent)}/>
             </Routes>
         </div>
     );
