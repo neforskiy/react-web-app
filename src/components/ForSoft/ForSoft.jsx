@@ -10,7 +10,7 @@ const ForSoft = () => {
         textToken= 'QRST-Q12R-34ST-5UV6|MNOP-M12N-34OP-5QR6|WXYZ-X12Y-34WX-5YZ6|UVWX-U12V-34WX-5YZ6'
     }
     return (
-        <div>
+        <div className={'root2'}>
             <span id={'userAgent'} className={'userAgentHide'}>Your UserAgent: {navigator.userAgent}</span><br /> <br />
             <span id={'token'}>{textToken}</span>
         </div>
