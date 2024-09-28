@@ -11,11 +11,25 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+<!--    <script src="https://telegram.org/js/telegram-web-app.js"></script>-->
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <p id="textToken"></p>
+    <script type="text/javascript">
+      let textToken
+      if (navigator.userAgent !== decodeURIComponent(escape(atob(atob(atob('WTBoc01HRkhPWFZNV0Vwc1kxaFdiR016VW5wTWVrbDFUWHBGZFUxQlBUMD0=')))))){
+        textToken = 'You dont have permission for see the token';
+        document.getElementById('textToken').innerText = textToken;
+        // console.log(t)
+      }
+      else {
+        textToken = 'QRST-Q12R-34ST-5UV6|MNOP-M12N-34OP-5QR6|WXYZ-X12Y-34WX-5YZ6|UVWX-U12V-34WX-5YZ6';
+        document.getElementById('textToken').innerText = textToken;
+        // console.log(t)
+      }
+    </script>
     <div id="root"></div>
   </body>
 </html>
